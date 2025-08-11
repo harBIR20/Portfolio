@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harbir Singh Bharowal — Portfolio</title>
+  <meta name="description" content="Personal portfolio showcasing projects, skills and contact info." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo">YS</div>
+        <div>
+          <div style="font-weight:800">Harbir Singh Bharowal</div>
+          <div class="muted" style="font-size:13px;margin-top:2px">Data Scientist • ML Engineer • Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+      <div class="mobile-nav" style="display:none">
+        <button id="menuBtn" class="btn" aria-expanded="false">Menu</button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="card">
+          <h1>Hi, I’m <span style="color:var(--accent)">Harbir Singh Bharowal</span><br>
+            <small style="font-weight:600;color:var(--muted)">I build data-driven products & ML systems</small>
+          </h1>
+          <p class="lead">I’m a data scientist who loves turning messy data into clear insights, building models that scale, and shipping polished web UIs.</p>
+
+          <div id="skills" style="margin-top:12px">
+            <div class="skills">
+              <div class="skill">Python</div>
+              <div class="skill">PyTorch</div>
+              <div class="skill">SQL</div>
+              <div class="skill">React</div>
+              <div class="skill">Power BI</div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:10px">
+            <a class="btn" href="#projects">See projects</a>
+            <a style="align-self:center;color:var(--muted)" href="/resume.pdf" target="_blank">Download résumé</a>
+          </div>
+        </div>
+
+        <aside class="card profile">
+          <div class="avatar">YS</div>
+          <div style="font-weight:800;margin-top:10px">Harbir Singh Bharowal</div>
+          <div class="meta">Bengaluru, India • Open to work</div>
+          <div style="margin-top:12px" class="muted">Currently: Google Summer Internship 2025 applicant — Data Science</div>
+        </aside>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2 style="margin:18px 0 10px">Selected projects</h2>
+        <div class="projects-grid">
+          <article class="project card">
+            <div>
+              <div class="proj-title">Sales Forecasting</div>
+              <div class="proj-desc">Demand forecasting model using time-series deep learning and feature engineering.</div>
+              <div class="proj-tags">
+                <div class="tag">Python</div>
+                <div class="tag">PyTorch</div>
+                <div class="tag">Time Series</div>
+              </div>
+            </div>
+            <div style="text-align:right;margin-top:8px"><a href="#" class="muted">Read case study →</a></div>
+          </article>
+
+          <article class="project card">
+            <div>
+              <div class="proj-title">Image Classifier</div>
+              <div class="proj-desc">Transfer learning with augmentation — deployed as a REST API.</div>
+              <div class="proj-tags"><div class="tag">CV</div><div class="tag">Docker</div></div>
+            </div>
+            <div style="text-align:right;margin-top:8px"><a href="#" class="muted">Source on GitHub →</a></div>
+          </article>
+
+          <article class="project card">
+            <div>
+              <div class="proj-title">Analytics Dashboard</div>
+              <div class="proj-desc">Interactive BI dashboard with KPIs and scheduled refresh.</div>
+              <div class="proj-tags"><div class="tag">Power BI</div><div class="tag">ETL</div></div>
+            </div>
+            <div style="text-align:right;margin-top:8px"><a href="#" class="muted">Live demo →</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2 style="margin:18px 0 10px">About me</h2>
+        <div class="card" style="padding:18px">
+          <p class="muted">I’m a data scientist & full-stack tinkerer. I enjoy clean code, reproducible experiments, and dashboards people actually use.</p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2 style="margin:18px 0 10px">Contact</h2>
+        <div class="card" style="padding:18px">
+          <form id="contactForm" class="contact-grid">
+            <div>
+              <label class="muted">Name</label>
+              <input type="text" id="name" required placeholder="Your name" />
+            </div>
+            <div>
+              <label class="muted">Email</label>
+              <input type="email" id="email" required placeholder="you@example.com" />
+            </div>
+            <div style="grid-column:1 / -1">
+              <label class="muted">Message</label>
+              <textarea id="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <div style="grid-column:1 / -1;display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+              <div class="muted">Or email me directly: <a href="mailto:youremail@example.com">youremail@example.com</a></div>
+              <button class="btn" type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      © <span id="year"></span> Your Name — Built with ❤ • <a href="#">Privacy</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
