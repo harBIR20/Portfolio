@@ -15,7 +15,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   
   const subject = encodeURIComponent('Portfolio contact from ' + name);
   const body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
-  window.location.href = 'mailto:youremail@example.com?subject=' + subject + '&body=' + body;
+  window.location.href = 'mailto:harbir2003@gmail.com?subject=' + subject + '&body=' + body;
 });
 
 // mobile menu toggle
