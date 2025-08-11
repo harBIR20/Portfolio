@@ -6,6 +6,8 @@
   <title>Harbir Singh Bharowal — Portfolio</title>
   <meta name="description" content="Personal portfolio showcasing projects, skills and contact info." />
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
 </head>
 <body>
   <div class="container">
@@ -33,10 +35,10 @@
     <main>
       <section class="hero">
         <div class="card">
-          <h1>Hi, I’m <span style="color:var(--accent)">Harbir Singh Bharowal</span><br>
-            <small style="font-weight:600;color:var(--muted)">I build data-driven products & ML systems</small>
+          <h1>Hi, I’m <span style="color:var(--accent)">Harbir Singh</span><br>
+            <small style="font-weight:600;color:var(--muted)">From data to design — analysis, ML, visuals, and front-end magic.</small>
           </h1>
-          <p class="lead">I’m a data scientist who loves turning messy data into clear insights, building models that scale.</p>
+          <p class="lead">I’m a data scientist passionate about transforming raw data into actionable insights, creating scalable machine learning models, and crafting intuitive visualizations and web experiences.</p>
 
           <div id="skills" style="margin-top:12px">
             <div class="skills">
@@ -66,16 +68,16 @@
 
       <!-- PROJECTS -->
       <section id="projects">
-        <h2 style="margin:18px 0 10px">Selected projects</h2>
+        <h2 style="margin:18px 0 10px">My Projects</h2>
         <div class="projects-grid">
           <article class="project card">
             <div>
               <div class="proj-title">News Detection System</div>
-              <div class="proj-desc">Fake News Detection model using  deep learning and feature engineering.</div>
+              <div class="proj-desc">Classifies news articles as real or fake using machine learning.</div>
               <div class="proj-tags">
                 <div class="tag">Python</div>
                 <div class="tag">PyTorch</div>
-                <div class="tag">Time Series</div>
+                <div class="tag">Deep Learning</div>
               </div>
             </div>
             <div style="text-align:right;margin-top:8px"><a href="https://github.com/harBIR20/Fake-News-Detection-System" class="muted" target="_blank">Source on Github →</a></div>
@@ -84,7 +86,7 @@
           <article class="project card">
             <div>
               <div class="proj-title">Heart Disease Detection</div>
-              <div class="proj-desc">Detection heart disease using deep learning models.</div>
+              <div class="proj-desc">Predicts the likelihood of heart disease based on medical data.</div>
               <div class="proj-tags"><div class="tag">Python</div><div class="tag">Machine Learning</div></div>
             </div>
             <div style="text-align:right;margin-top:8px"><a href="https://github.com/harBIR20/Heart-Disease-Prediction" class="muted" target="_blank">Source on GitHub →</a></div>
@@ -105,7 +107,14 @@
       <section id="about">
         <h2 style="margin:18px 0 10px">About me</h2>
         <div class="card" style="padding:18px">
-          <p class="muted">I’m a data scientist & full-stack tinkerer. I enjoy clean code, reproducible experiments, and dashboards people actually use.</p>
+          <p class="muted">I’m a Computer Science graduate from Ludhiana with a passion for problem-solving, data-driven innovation, and continuous learning.
+Proficient in C/C++, Java, Python, MySQL, and R, I work across the spectrum — from developing robust applications to uncovering insights through data analysis, visualization, and machine learning.
+
+I’m particularly focused on Data Science and Big Data, building impactful solutions to real-world challenges. In my free time, I work on personal projects, and explore new technologies in machine learning and web development.
+
+Always eager for new challenges, I aim to contribute meaningfully to innovative projects while growing as a developer.
+
+</p>
         </div>
       </section>
 
@@ -127,17 +136,27 @@
               <textarea id="message" rows="5" required placeholder="Tell me about your project..."></textarea>
             </div>
             <div style="grid-column:1 / -1;display:flex;justify-content:space-between;align-items:center;margin-top:8px">
-              <div class="muted">Or email me directly: <a href="mailto:harbir2003@gmail.com">harbir2003@gmail.com.com</a></div>
+              <div class="muted">Or email me directly: <a href="mailto:harbir2003@gmail.com">harbir2003@gmail.com</a></div>
               <button class="btn" type="submit">Send message</button>
             </div>
           </form>
+          <!-- Social Links -->
+            <div class="social-links">
+              <div class="phone-link">
+                <a href="javascript:void(0);" id="phoneToggle" title="Show Phone"><i class="fas fa-phone"></i></a>
+                <span class="phone-number" id="phoneNumber">+91 84270 50284</span>
+              </div>
+              <a href="mailto:harbir2003@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/harbir-singh-346029231/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/harBIR20" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-      © <span id="year"></span> Harbir Singh — Built with ❤ • <a href="#">Privacy</a>
+      © <span id="year"></span> Harbir Singh — Built with ❤ | <a href="#">Privacy</a>
     </footer>
   </div>
   <script src="script.js"></script>

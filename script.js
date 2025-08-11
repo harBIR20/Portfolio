@@ -32,3 +32,11 @@ if (menuBtn) {
     }
   });
 }
+
+// phone icon toggle
+const phoneToggle = document.getElementById("phoneToggle");
+if (phoneToggle) {
+  phoneToggle.addEventListener("click", function() {
+    document.getElementById("phoneNumber").classList.toggle("show");
+  });
+}

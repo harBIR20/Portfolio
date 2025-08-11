@@ -59,3 +59,44 @@ footer{margin-top:36px;padding:18px;border-radius:12px;background:linear-gradien
 
 /* small helpers */
 .muted{color:var(--muted)}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.social-links a {
+  color: var(--muted);
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phone-number {
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.phone-number.show {
+  opacity: 1;
+  max-width: 200px;
+  color: var(--accent);
+}
+
+
